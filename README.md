@@ -1,43 +1,31 @@
-# 🤖 Recruiter AI Agent
+# Recruiter AI Agent
 
-## 📌 Project Overview
-This project is a simple AI-based recruiter assistant that helps in screening resumes based on job requirements.
+## Project Description
+This project is a simple AI-based recruiter assistant that helps in screening candidates based on their resumes and job descriptions.
 
-## 🎯 Objective
-To automate the process of candidate shortlisting using basic AI techniques.
+## Features
+- Resume upload (PDF/DOCX)
+- Job description input
+- Skill matching and candidate scoring
+- Candidate ranking (High, Medium, Low)
+- Interview scheduling
+- Candidate communication messages
 
-## ⚙️ Features
-- Paste resume and job description
-- Analyze matching skills
-- Generate candidate score
-- Suggest if candidate is suitable or not
-
-## 🛠️ Technologies Used
+## Technologies Used
 - Python
 - Streamlit
-- NLP (basic keyword matching)
+- FastAPI
+- SQLite
 
-## 🚀 How It Works
-1. User inputs resume text
-2. User inputs job description
-3. System checks for matching skills
-4. Generates a match score
-5. Displays result
+## How to Run
+1. Install dependencies:
+   pip install streamlit PyPDF2 python-docx fastapi uvicorn
 
-## 📅 Week 1 Progress
-- Project idea finalized
-- GitHub repository created
-- Development environment setup
-- Basic resume screening app built
-- Simple scoring system implemented
+2. Run the app:
+   streamlit run app.py
 
-## 🔜 Future Improvements
-- Advanced NLP using spaCy
-- Resume parsing automation
-- Candidate database integration
-- Deployment on Streamlit Cloud
-
-## 🎥 Demo
-Demo video will show resume screening functionality
-
----
+## Output
+The system analyzes resumes and shows:
+- Candidate result
+- Rank
+- Selection message
